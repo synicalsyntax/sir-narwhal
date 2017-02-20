@@ -42,7 +42,7 @@ static files (CSS stylesheets, images, fonts) are located in the
 
 ## Installation
 
-To install Sir Narwhal locally,
+### Local Installation
 
 1. Open your command line interface (CLI).
 
@@ -59,6 +59,40 @@ To install Sir Narwhal locally,
 4. Install the dependencies in the local node_modules folder:
     ```sh
     $ npm install
+    ```
+
+### Creating a Bot Account
+5. Go to the [Discord application](https://discordapp.com/developers/applications/me)
+and click the **New App** button.
+
+6. Name your application as **Sir Narwhal** and add a picture and
+description if you wish.
+
+7. Click the **Create Bot User** button and accept the confirmation dialog
+that appears.
+
+8. Copy the token under the **App Bot User** section.
+
+More detailed information on creating a Discord bot account can be found
+[here](https://twentysix26.github.io/Red-Docs/red_guide_bot_accounts/).
+
+### Configuration
+
+9. Create a file named `config.js` in the root of the folder with your local
+copy of this repository with the following format:
+    ```.js
+    module.exports = {
+       token: 'bot_token'
+    };
+    ```
+    Replace `bot_token` with the token you copied from the Discord bot
+    application page.
+
+10. Change the values of the `regions` array in `lib/region-grouping.js` to
+valid role names (case-sensitive within single quotes) on your server.
+    ```.js
+    // Example
+    const regions = ['Role1', 'Role2', 'Role3']; // create array of all regions
     ```
 
 ## Usage
