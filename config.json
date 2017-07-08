@@ -1,0 +1,10 @@
+{
+  "token": "[REDACTED]",
+  "regionGroupingChannelID": "272250356602503168",
+  "regionResponseChannelID": "264282097164746752",
+  "regionJoinCooldown": "1",
+  "defaultRole": "Summoners",
+  "joinMessageID": "333476948519026698",
+  "joinChannelID": "333324442841120782",
+  "welcomeChannelID": "333324114506940427"
+}

@@ -50,7 +50,7 @@
 
 body {
     font-family: 'Whitney', sans-serif;
-    background-image: url('../images/sirnarwhal.png');
+    background-image: url('../images/background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -64,7 +64,12 @@ h5 {
     font-weight: 500;
 }
 
-a:link, a:visited, a:hover, a:active {
+a:link, a:visited {
+    color: #eee;
+    transition: .5s;
+}
+
+a:hover, a:active {
     color: #7289DA;
 }
 
@@ -73,13 +78,15 @@ a:link, a:visited, a:hover, a:active {
     margin: auto;
     position: absolute;
     top: 0;
-    left: 500;
+    left: 0;
     bottom: 0;
-    right: 0;
+    right: 500;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .btn, .btn:link, .btn:visited, .btn:hover, .btn:active {
     font-weight: 600;
     color: #fff;
     background-color: #7289DA;
+    text-shadow: none;
 }

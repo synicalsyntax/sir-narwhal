@@ -1,6 +1,6 @@
 {
   "name": "sir-narwhal",
-  "version": "3.0.2",
+  "version": "4.0.0",
   "description": "Region role assigner bot for League of Teemos server on Discord",
   "homepage": "https://sir-narwhal.herokuapp.com",
   "author": {
@@ -8,11 +8,11 @@
     "email": "cynthialin1004@gmail.com",
     "url": "http://clin-dump.co.nf"
   },
-  "files": [
-    "lib",
-    "app"
-  ],
-  "main": "lib/index.js",
+  "main": "src/index.js",
+  "engines": {
+    "node": "*",
+    "npm": "^4.0.0"
+  },
   "keywords": [
     "sir narwhal",
     "sir-narwhal",
@@ -25,8 +25,8 @@
     "discordapp"
   ],
   "scripts": {
-    "bot": "node ./lib/index.js",
-    "start": "node ./lib/index.js",
+    "bot": "node ./src/index.js",
+    "start": "node ./src/index.js",
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
@@ -36,10 +36,10 @@
     "express": "~4.15.2"
   },
   "devDependencies": {
-    "eslint": "^3.1.1",
+    "eslint": "^4.1.1",
     "eslint-config-xo-space": "^0.16.0",
     "gulp": "^3.9.0",
-    "gulp-eslint": "^3.0.1",
+    "gulp-eslint": "^4.0.0",
     "gulp-exclude-gitignore": "^1.0.0",
     "gulp-line-ending-corrector": "^1.0.1",
     "gulp-nsp": "^2.1.0"
@@ -47,10 +47,8 @@
   "eslintConfig": {
     "extends": "xo-space",
     "rules": {
-      "capitalized-comments": "off",
+      "camelcase": "off",
       "object-curly-spacing": "off",
-      "no-compare-neg-zero": "off",
-      "no-multi-assign": "off",
       "space-before-function-paren": ["error", "never"]
     }
   },
