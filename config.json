@@ -3,8 +3,20 @@
   "regionGroupingChannelID": "272250356602503168",
   "regionResponseChannelID": "264282097164746752",
   "regionJoinCooldown": "1",
-  "defaultRole": "Summoners",
+  "regions": ["NA", "EUW", "JP", "LAN", "EUNE", "KR", "LAS", "RU", "OCE", "BR", "TR"],
   "joinMessageID": "333476948519026698",
   "joinChannelID": "333324442841120782",
-  "welcomeChannelID": "333324114506940427"
+  "defaultRole": "Summoners",
+  "welcomeChannelID": "333324114506940427",
+  "teemoQuotes": [
+    "Hut, two, three, four!",
+    "Never underestimate the power of the Scouts Code.",
+    "Captain Teemo on duty!",
+    "Size doesn't mean anything.",
+    "Reporting in.",
+    "I'll scout ahead!",
+    "That's gotta sting!",
+    "Swiftly!",
+    "Armed and ready!"
+  ]
 }

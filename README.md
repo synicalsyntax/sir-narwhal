@@ -77,38 +77,61 @@ static files (CSS stylesheets, images, fonts) are located in the
     $ npm install
     ```
 
-5. If necessary, create a Discord bot account for your copy of the bot by
+5. If necessary, create a Discord bot account for your local copy of the bot by
 following this
-[guide](https://twentysix26.github.io/Red-Docs/red_guide_bot_accounts/).
+[guide](https://twentysix26.github.io/Red-Docs/red_guide_bot_accounts/), and
+invite it to your server.
 
-
-This bot can be modified by configuring the available options in `config.json`.
-
-
+6. Modify the available options in the example `config.json` to valid values.
 
 ### Configuration
 
-9. Create a file named `config.json` in the root of the folder with your local
-copy of this repository with the following format:
-    ```.js
-    module.exports = {
-       token: 'bot_token'
-    };
-    ```
-    Replace `bot_token` with the token you copied from the Discord bot
-    application page.
+You can modify the following values in `config.json` to customize the behavior
+of Sir Narwhal:
 
-10. Change the values of the `regions` array in `src/region-grouping.js` to
-valid role names (case-sensitive within single quotes) on your server.
-    ```.js
-    // Example
-    const regions = ['Role1', 'Role2', 'Role3']; // create array of all regions
-    ```
+* `token` **(REQUIRED)**: Your Discord bot account's token. Under no
+circumstances should you reveal the value of this field to others, lest the
+likely compromise of your bot.
+
+* `regionGroupingChannelID`: The ID of the text channel that Sir Narwhal will
+check prompts to join region roles for. If null, the region assignment
+functionality will be disabled.
+
+    * `regionResponseChannelID`: The ID of the text channel that Sir Narwhal
+    will announce region assignments to. **Required** if
+    `regionGroupingChannelID` is not null.
+
+    * `regionJoinCooldown`: Number of minutes that a user must wait before
+    switching to a different region. **Required** if `regionGroupingChannelID`
+    is not null.
+
+    * `regions`: Array of strings of role names that represent the regions
+    users can join. Bot must have the right permissions and position in the role
+    hierarchy in order for proper functionality. **Required** if
+    `regionGroupingChannelID` is not null.
+
+* `joinMessageID`: The ID of the message that Sir Narwhal checks for green
+checkmark (✅) reactions. If null, the new member initiation functionality will
+be disabled.
+
+* `joinChannelID`: The channel ID of the message that Sir Narwhal checks for
+green checkmark (✅) reactions. If null, the new member initiation functionality
+will be disabled.
+
+    * `defaultRole`: The role name that new members gain when they complete
+    initiation. If null, no role will be assigned.
+
+    * `welcomeChannelID`: The channel ID that Sir Narwhal will send a welcome
+    message to when a new member is initiated. If null, no welcome message will
+    be sent.
+
+        * `teemoQuotes`: Array of strings that will be randomly included in
+        welcome quotes. **Required** if `welcomeChannelID` is not null.
 
 ## Usage
 
 To run this bot, ensure that you are in the folder with your local copy of
 this repository and run:
 ```sh
-$ npm run bot
+$ npm start
 ```

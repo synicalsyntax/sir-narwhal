@@ -4,17 +4,16 @@ exports.run = (client, msg) => {
   msg.delete();
 
   const role = msg.content.toUpperCase();
-  const regions = ['NA', 'EUW', 'JP', 'LAN', 'EUNE', 'KR', 'LAS', 'RU', 'OCE', 'BR', 'TR'];
   const lol = client.channels.get(client.config.regionResponseChannelID);
   const region = msg.guild.roles.find('name', role);
 
-  if (!regions.includes(role) || !region || msg.member.roles.exists('name', role)) {
+  if (!client.config.regions.includes(role) || !region || msg.member.roles.exists('name', role)) {
     return;
   }
 
   const memberCount = msg.guild.roles.find('name', role).members.size + 1;
 
-  const old = regions.find(current => msg.member.roles.exists('name', current));
+  const old = client.config.regions.find(current => msg.member.roles.exists('name', current));
 
   if (cooldown.has(msg.author.id)) {
     const time = Math.round((cooldown.get(msg.author.id) - Date.now()) / 1000);
