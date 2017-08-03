@@ -10,8 +10,8 @@
   },
   "main": "src/index.js",
   "engines": {
-    "node": ">=5.0.0",
-    "npm": "^4.0.0"
+    "node": ">=6.0.0",
+    "npm": ">=3.8.6"
   },
   "keywords": [
     "sir narwhal",

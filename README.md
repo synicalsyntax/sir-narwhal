@@ -1,4 +1,5 @@
 # Sir Narwhal
+
 <div align="center">
   <p>
     <a href="https://sir-narwhal.herokuapp.com">
@@ -48,9 +49,9 @@ to a specified channel.
 
 ---
 
-The bot's source code, written with the
-[Discord.js](https://github.com/hydrabolt/discord.js) library, is
-located in `src`. The website is served from `src/index.js` using
+The bot's source code, written in [Node.js](https://nodejs.org/en/about/) with
+the [Discord.js](https://github.com/hydrabolt/discord.js) library, is located in
+`src`. The website is served from `src/index.js` using
 [Express](https://github.com/expressjs/express), and a majority of the bot's
 functions are located in `src/commands`.
 
@@ -59,6 +60,22 @@ static files (CSS stylesheets, images, fonts) are located in the
 `src/static` folder.
 
 ## Installation
+
+### Prerequisites
+
+Before you get started, make sure you have:
+   * [installed](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+   and
+   [configured](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+   Git on your local machine
+   * [installed](https://docs.npmjs.com/getting-started/installing-node)
+   Node.js (version >= v6.0.0) and npm (version >= v3.8.6)
+   * [created](https://twentysix26.github.io/Red-Docs/red_guide_bot_accounts/#creating-a-new-bot-account)
+   a new Discord bot account for your bot
+   * [invited](https://twentysix26.github.io/Red-Docs/red_guide_bot_accounts/#adding-the-bot-account-to-your-server)
+   your bot account to your server
+
+### Instructions
 
 1. Open your command line interface (CLI).
 
@@ -130,8 +147,10 @@ will be disabled.
 
 ## Usage
 
-To run this bot, ensure that you are in the folder with your local copy of
-this repository and run:
+Once you have successfully installed and configured your copy of Sir Narwhal,
+ensure that you are in the folder with your local copy of this repository and
+run:
+
 ```sh
 $ npm start
 ```
