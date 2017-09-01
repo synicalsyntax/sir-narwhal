@@ -23,6 +23,8 @@ exports.run = (client, msg) => {
     msg.member.removeRole(msg.guild.roles.find('name', old));
   }
 
+  const creator = client.users.get('274958738354601984');
+  
   const embed = {
     color: region.color,
     author: {
@@ -41,7 +43,7 @@ exports.run = (client, msg) => {
     },
     timestamp: new Date(),
     footer: {
-      icon_url: client.users.get('274958738354601984').displayAvatarURL,
+      icon_url: creator ? creator.displayAvatarURL : 'https://synicalsyntax.me/images/logo.png',
       text: 'Sir Narwhal is a bot written by @synicalsyntax'
     }
   };
