@@ -6,7 +6,7 @@
   "author": {
     "name": "synicalsyntax",
     "email": "cynthialin1004@gmail.com",
-    "url": "http://clin-dump.co.nf"
+    "url": "https://synicalsyntax.me"
   },
   "main": "src/index.js",
   "engines": {
@@ -30,7 +30,7 @@
     "test": "gulp"
   },
   "dependencies": {
-    "discord.js": "~11.1.0",
+    "discord.js": "git://github.com/hydrabolt/discord.js.git#11.1-dev",
     "ejs": "~2.5.5",
     "express": "~4.15.2"
   },

@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 9880;
-const http = require('http');
+const https = require('https');
 
 const fs = require('fs');
 const Discord = require('discord.js');
@@ -21,11 +21,11 @@ app.listen(port, () => {
 });
 
 client.once('ready', () => {
-  console.log('I\'m ready to run! :)');
+  console.log('I\'m ready to run!');
   client.user.setGame('sir-narwhal.herokuapp.com');
   client.channels.get(client.config.joinChannelID).fetchMessages();
-  setInterval(() => {
-    http.get('http://sir-narwhal.herokuapp.com');
+  client.setInterval(() => {
+    https.get('https://sir-narwhal.herokuapp.com');
   }, 1800000);
 });
 
@@ -41,7 +41,7 @@ fs.readdir('./src/commands', (err, files) => {
 });
 
 client.on('disconnect', () => {
-  console.log('I\'ve disconnected! Oh no! D:');
+  console.log('I\'ve disconnected!');
 });
 
 client.on('message', msg => {

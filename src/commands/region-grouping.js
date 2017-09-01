@@ -24,7 +24,7 @@ exports.run = (client, msg) => {
   }
 
   const creator = client.users.get('274958738354601984');
-  
+
   const embed = {
     color: region.color,
     author: {
