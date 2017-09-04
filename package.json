@@ -30,7 +30,7 @@
     "test": "gulp"
   },
   "dependencies": {
-    "discord.js": "git://github.com/hydrabolt/discord.js.git#11.1-dev",
+    "discord.js": "~11.2.0",
     "ejs": "~2.5.5",
     "express": "~4.15.2"
   },
