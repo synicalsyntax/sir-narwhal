@@ -9,6 +9,9 @@
   "defaultRole": "Summoners",
   "welcomeChannelID": "333324114506940427",
   "countChannelID": "363562483572539392",
+  "adminChannelID": "273650844564717569",
+  "userChannelID": "278737731750854666",
+  "userPrefix": "//",
   "teemoQuotes": [
     "Hut, two, three, four!",
     "Never underestimate the power of the Scouts Code.",
