@@ -8,6 +8,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 client.config = require('../config.json');
 client.commands = new Discord.Collection();
+client.count = 1;
 
 app.set('view engine', 'ejs');
 app.use(express.static('./src/static'));

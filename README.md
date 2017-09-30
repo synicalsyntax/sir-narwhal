@@ -1,32 +1,20 @@
 # Sir Narwhal
 
 <div align="center">
-  <p>
-    <a href="https://sir-narwhal.herokuapp.com">
-      <img src="https://sir-narwhal.herokuapp.com/images/banner.png" width="546" alt="Sir Narwhal">
-    </a>
-    <br>
-    Region role assigner bot for League of Teemos server on Discord
-  </p>
-  <p>
-    <a href="http://discord.gg/YY8Senp">
-      <img src="https://discordapp.com/api/guilds/264282097164746752/embed.png" alt="Discord server">
-    </a>
-    <a href="https://travis-ci.org/synicalsyntax/sir-narwhal">
-      <img src="https://travis-ci.org/synicalsyntax/sir-narwhal.svg?branch=master" alt="Build status">
-    </a>
-    <a href="https://david-dm.org/synicalsyntax/sir-narwhal">
-      <img src="https://david-dm.org/synicalsyntax/sir-narwhal.svg?theme=shields.io" alt="Dependency status">
-    </a>
-    <a href="https://codeclimate.com/github/synicalsyntax/sir-narwhal">
-      <img src="https://codeclimate.com/github/synicalsyntax/sir-narwhal/badges/gpa.svg" alt="Code Climate">
-    </a>
-    <a href="http://github.com/synicalsyntax/sir-narwhal/releases/latest/">
-      <img src="https://img.shields.io/github/release/synicalsyntax/sir-narwhal.svg" alt="GitHub latest release">
-    </a>
-    <a href="https://raw.githubusercontent.com/synicalsyntax/sir-narwhal/master/LICENSE">
-      <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GitHub license">
-    </a>
+  <div style="width:546px">
+    <p>
+      [![Sir Narwhal](https://sir-narwhal.herokuapp.com/images/banner.png)](https://sir-narwhal.herokuapp.com)
+    </p>
+  </div>
+
+  <p>Region role assigner bot for League of Teemos server on Discord</p>
+
+  [![Discord server](https://discordapp.com/api/guilds/264282097164746752/embed.png)](http://discord.gg/YY8Senp)
+  [![Travis build status](https://img.shields.io/travis/synicalsyntax/sir-narwhal.svg)](https://travis-ci.org/synicalsyntax/sir-narwhal)
+  [![Dependencies status](https://david-dm.org/synicalsyntax/sir-narwhal/status.svg)](https://david-dm.org/synicalsyntax/sir-narwhal)
+  [![Code Climate](https://img.shields.io/codeclimate/github/synicalsyntax/sir-narwhal.svg)](https://codeclimate.com/github/synicalsyntax/sir-narwhal)
+  [![GitHub latest release](https://img.shields.io/github/release/synicalsyntax/sir-narwhal.svg)](http://github.com/synicalsyntax/sir-narwhal/releases/latest/)
+  [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/synicalsyntax/sir-narwhal/master/LICENSE)
 </div>
 
 ## About
@@ -144,6 +132,10 @@ will be disabled.
 
         * `teemoQuotes`: Array of strings that will be randomly included in
         welcome quotes. **Required** if `welcomeChannelID` is not null.
+
+* `countChannelID`: The ID of the text channel that Sir Narwhal will
+check responses to the count game for. If null, the count game functionality
+will be disabled.
 
 ## Usage
 
