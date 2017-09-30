@@ -3,7 +3,7 @@ exports.run = (client, msg) => {
     return;
   }
 
-  if (msg.content % 1 !== 0 || parseInt(msg.content, 10) !== client.count) {
+  if (msg.content % 1 !== 0 || parseInt(msg.content, 10) !== client.count || parseInt(msg.content, 10).toString() !== msg.content) {
     return msg.delete();
   }
 
