@@ -1,14 +1,14 @@
 # Sir Narwhal
 
 <div align="center">
-  <div style="width:546px">
-    <p>
-      [![Sir Narwhal](https://sir-narwhal.herokuapp.com/images/banner.png)](https://sir-narwhal.herokuapp.com)
-    </p>
-  </div>
-
-  <p>Region role assigner bot for League of Teemos server on Discord</p>
-
+  <p>
+    <a href="https://sir-narwhal.herokuapp.com" style="text-decoration:none"> 
+      <img src="https://sir-narwhal.herokuapp.com/images/banner.png" width="546" alt="Sir Narwhal"> 
+    </a> 
+    <br>
+    Region role assigner bot for League of Teemos server on Discord
+  </p>
+  
   [![Discord server](https://discordapp.com/api/guilds/264282097164746752/embed.png)](http://discord.gg/YY8Senp)
   [![Travis build status](https://img.shields.io/travis/synicalsyntax/sir-narwhal.svg)](https://travis-ci.org/synicalsyntax/sir-narwhal)
   [![Dependencies status](https://david-dm.org/synicalsyntax/sir-narwhal/status.svg)](https://david-dm.org/synicalsyntax/sir-narwhal)
