@@ -2,13 +2,13 @@
 
 <div align="center">
   <p>
-    <a href="https://sir-narwhal.herokuapp.com" style="text-decoration:none"> 
-      <img src="https://sir-narwhal.herokuapp.com/images/banner.png" width="546" alt="Sir Narwhal"> 
-    </a> 
+    <a href="https://sir-narwhal.herokuapp.com" style="text-decoration:none">
+      <img src="https://sir-narwhal.herokuapp.com/images/banner.png" width="546" alt="Sir Narwhal">
+    </a>
     <br>
     Region role assigner bot for League of Teemos server on Discord
   </p>
-  
+
   [![Discord server](https://discordapp.com/api/guilds/264282097164746752/embed.png)](http://discord.gg/YY8Senp)
   [![Travis build status](https://img.shields.io/travis/synicalsyntax/sir-narwhal.svg)](https://travis-ci.org/synicalsyntax/sir-narwhal)
   [![Dependencies status](https://david-dm.org/synicalsyntax/sir-narwhal/status.svg)](https://david-dm.org/synicalsyntax/sir-narwhal)
@@ -19,33 +19,25 @@
 
 ## About
 
-**Sir Narwhal** is a "region" role assigner bot commissioned for the [League of
-Teemos server](http://discord.gg/YY8Senp) on [Discord](https://discordapp.com).
+**Sir Narwhal** is a channel-based, multipurpose bot commissioned for the
+[League of Teemos server](http://discord.gg/YY8Senp) on
+[Discord](https://discordapp.com).
 
-The purpose of this specialized bot is to give users specific roles after they
-send a message corresponding to a valid region in a specified channel.Upon
-success of the role addition, the a notification concerning the user's region
-change will be sent to a different specified channel. The bot also checks that
-all users have one region role at a time and replaces their region roles if they
-request a new one and deletes any messages sent to the region assignment channel
-for orderliness.
-
-The bot also initiates new members to the server after they acknowledge the
-server rules by assigning them a role that gives them access to all other
-channels in the guild. It also welcomes new members by sending custom messages
-to a specified channel.
+The bot has various functions, including giving unique "region" roles to users
+upon request, welcoming new members to the server, and automating an interactive
+"count" game.
 
 ---
 
 The bot's source code, written in [Node.js](https://nodejs.org/en/about/) with
 the [Discord.js](https://github.com/hydrabolt/discord.js) library, is located in
-`src`. The website is served from `src/index.js` using
+`src`. The website is served from `./src/index.js` using
 [Express](https://github.com/expressjs/express), and a majority of the bot's
-functions are located in `src/commands`.
+functions are located in `./src/commands`.
 
-The website's source code is located in `views/index.ejs`; however, its
+The website's source code is located in `./views/index.ejs`; however, its
 static files (CSS stylesheets, images, fonts) are located in the
-`src/static` folder.
+`./src/static` folder.
 
 ## Installation
 
@@ -136,6 +128,17 @@ will be disabled.
 * `countChannelID`: The ID of the text channel that Sir Narwhal will
 check responses to the count game for. If null, the count game functionality
 will be disabled.
+
+* `adminChannelID`: The ID of the text channel that Sir Narwhal will
+check for administrator-only commands for. *This channel should only be
+accessible to administrators.*
+
+* `userChannelID`: The ID of the text channel that Sir Narwhal will
+check for regular user commands for. *This channel should only be
+accessible to users.*
+
+* `userPrefix`: The prefix used for any administrator or user-prompted commands.
+**Required** if either `adminChannelID` or `userChannelID` is not null.
 
 ## Usage
 
