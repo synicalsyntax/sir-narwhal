@@ -1,4 +1,4 @@
-# Sir Narwhal
+# Sir Narwhal [DEPRECATED]
 
 <div align="center">
   <p>
@@ -18,6 +18,8 @@
 </div>
 
 ## About
+
+**NOTICE: This project is no longer under development.**
 
 **Sir Narwhal** is a channel-based, multipurpose bot commissioned for the
 [League of Teemos server](http://discord.gg/YY8Senp) on

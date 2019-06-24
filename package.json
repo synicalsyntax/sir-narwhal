@@ -4,9 +4,7 @@
   "description": "Region role assigner bot for League of Teemos server on Discord",
   "homepage": "https://sir-narwhal.herokuapp.com",
   "author": {
-    "name": "synicalsyntax",
-    "email": "cynthialin1004@gmail.com",
-    "url": "https://synicalsyntax.me"
+    "name": "synicalsyntax"
   },
   "main": "src/index.js",
   "engines": {
